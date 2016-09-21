@@ -20,7 +20,7 @@ module.exports = function(options) {
 
     try {
       file.contents = new Buffer(msx.transform(file.contents.toString(), options))
-      file.path = gutil.replaceExtension(file.path, '.js')
+      file.path = gutil.replaceExtension(file.path, '.ts')
       this.push(file)
     }
     catch (err) {
